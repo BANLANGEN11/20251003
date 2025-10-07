@@ -38,7 +38,7 @@ Figure 1 shows the overall training process of VI-DFCM. VI-DFCM achieves long-te
 </p>
 
 
-In our designed experiments, the prediction lengths are {168, 720}, corresponding to input sequence lengths of {50, 100}. Therefore, when granulating, we require the optimal information granule length obtained to be less than or equal to {50, 100}.
+In our designed experiments, the prediction lengths are {168, 720}, and the input sequence lengths for each baseline model are {50, 100}, respectively. Therefore, when performing information granulation, we require that the length of the obtained optimal information granule does not exceed the input sequence length of each baseline, i.e., the input length of VI-DFCM should be less than or equal to {50, 100}.
 ### (2).VI-FCM submodel
 <p align="center">
 <img src=".\pic\3VI-FCM.png" height = "360" width="50%" alt="" align=center />
