@@ -81,7 +81,7 @@ $A_i(S+1) = \frac{1}{1 + e^{-\lambda \left( \sum_{j=1}^{N}  \left(\gamma_{i,j}^{
 
 🔎 Equation `(18)` correspond to code in `models/VIFCM_Cross.py`, lines `31`.
 
-🔎 Equations `(19)–(22)` correspond to code in `models/VIDFCM.py`, lines `68–90`.
+🔎 Equations `(19)–(22)` correspond to code in `models/VIDFCM.py`, lines `68–91`.
 ### (4). EXPERIMENTAL RESULTS
 
 <p align="center">
