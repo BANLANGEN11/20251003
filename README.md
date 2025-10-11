@@ -69,7 +69,7 @@ $A_i(S+1) = \frac{1}{1 + e^{-\lambda \left( \sum_{j=1}^{N} \left(\gamma_{i,j}  w
 
 where $\circ$ denotes the Hadamard product, $\lambda$ represents the steepness parameter of the transfer function near zero, and $\boldsymbol{w}\in\mathbb{R}^{N\times N \times I}$ is the weight tensor. The weights $\boldsymbol{w}$, modulated by the dynamic coefficients $\gamma_{i,j}$, are then element-wise multiplied with the node  $\boldsymbol{A}$ via the Hadamard product.
 
-🔎 Equations `(12)–(15)` correspond to code in `models/VIDFCM.py`, lines `25–54`.
+🔎 Equations `(12)–(15)` correspond to code in `models/VIDFCM.py`, lines `25–54`. The code on line `39` represents the Hadamard product of the weights $\boldsymbol{w}$ and the node matrix $\boldsymbol{A}$. 
 ### (3).Cross VI-FCM submodel
 <p align="center">
 <img src=".\pic\4Cross VI FCM.png" height = "360" width="50%" alt="" align=center />
@@ -81,7 +81,7 @@ The inference process of the Cross VI-FCM submodel. The transfer function of Cro
 
 $A_i(S+1) = \frac{1}{1 + e^{-\lambda \left( \sum_{j=1}^{N}  \left(\gamma_{i,j}^{CF}  w_{i,j,:}\right) \circ A_j(S) + u_i(S) \right)}}$
 
-Similarly to the VI-FCM submodel, the weights $\boldsymbol{w}$, modulated by the dynamic coefficients $\gamma_{ij}$, are then element-wise multiplied with the node  $\boldsymbol{A}$ via the Hadamard product.
+Similarly to the VI-FCM submodel, the weights $\boldsymbol{w}$, modulated by the dynamic coefficients $\gamma_{ij}$, are then element-wise multiplied with the node  $\boldsymbol{A}$ via the Hadamard product. The code on line 76 represents the Hadamard product of the weights $\boldsymbol{w}$ and the node matrix $\boldsymbol{A}$.
 
 🔎 Equation `(18)` correspond to code in `models/VIFCM_Cross.py`, lines `31`.
 
