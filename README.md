@@ -46,7 +46,11 @@ In our designed experiments, the prediction lengths are {168, 720}, and the inpu
 <b>Figure 1.</b> VI-FCM submodel.
 </p>
 
-The inference process of the VI-FCM submodel.
+The inference process of the VI-FCM submodel. The transfer function of VI-FCM is given by:
+
+$A_i(S+1) = \frac{1}{1 + e^{-\lambda \left( \sum_{j=1}^{N} \left(\gamma_{i,j}  w_{i,j,:} \right) \circ A_j(S) + u_i(S) \right)}}$
+
+where $\circ$ denotes the Hadamard product, $\lambda$ represents the steepness parameter of the transfer function near zero, and $\boldsymbol{w}\in\mathbb{R}^{N\times N \times I}$ is the weight tensor.
 
 ### (3).Cross VI-FCM submodel
 <p align="center">
@@ -56,6 +60,8 @@ The inference process of the VI-FCM submodel.
 </p>
 
 The inference process of the Cross VI-FCM submodel.
+
+$A_i(S+1) = \frac{1}{1 + e^{-\lambda \left( \sum_{j=1}^{N}  \left(\gamma_{i,j}^{CF}  w_{i,j,:}\right) \circ A_j(S) + u_i(S) \right)}}$
 
 ### (4). EXPERIMENTAL RESULTS
 
