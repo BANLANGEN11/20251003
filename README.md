@@ -74,7 +74,7 @@ where $\circ$ denotes the Hadamard product, $\lambda$ represents the steepness p
 <b>Figure 1.</b> Cross VI-FCM submodel.
 </p>
 
-The inference process of the Cross VI-FCM submodel.
+The inference process of the Cross VI-FCM submodel. The transfer function of Cross VI-FCM is given by:
 
 $A_i(S+1) = \frac{1}{1 + e^{-\lambda \left( \sum_{j=1}^{N}  \left(\gamma_{i,j}^{CF}  w_{i,j,:}\right) \circ A_j(S) + u_i(S) \right)}}$
 
