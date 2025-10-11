@@ -67,6 +67,7 @@ $A_i(S+1) = \frac{1}{1 + e^{-\lambda \left( \sum_{j=1}^{N} \left(\gamma_{i,j}  w
 
 where $\circ$ denotes the Hadamard product, $\lambda$ represents the steepness parameter of the transfer function near zero, and $\boldsymbol{w}\in\mathbb{R}^{N\times N \times I}$ is the weight tensor.
 
+🔎
 ### (3).Cross VI-FCM submodel
 <p align="center">
 <img src=".\pic\4Cross VI FCM.png" height = "360" width="50%" alt="" align=center />
