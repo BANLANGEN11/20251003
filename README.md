@@ -67,7 +67,7 @@ The inference process of the VI-FCM submodel. The transfer function of VI-FCM is
 
 $A_i(S+1) = \frac{1}{1 + e^{-\lambda \left( \sum_{j=1}^{N} \left(\gamma_{i,j}  w_{i,j,:} \right) \circ A_j(S) + u_i(S) \right)}}$
 
-where $\circ$ denotes the Hadamard product, $\lambda$ represents the steepness parameter of the transfer function near zero, and $\boldsymbol{w}\in\mathbb{R}^{N\times N \times I}$ is the weight tensor. The weights $\boldsymbol{w}$, modulated by the dynamic coefficients $\gamma_{i,j}$, are then element-wise multiplied with the node  $\boldsymbol{A}$ via the Hadamard product.
+where $\circ$ denotes the Hadamard product, $\lambda$ represents the steepness parameter of the transfer function near zero, and $\boldsymbol{w}\in\mathbb{R}^{N\times N \times I}$ is the weight tensor. The weights $\boldsymbol{w}$, modulated by the dynamic coefficients $\gamma_{i,j}$, are then element-wise multiplied with the node  $\boldsymbol{A}$ via the Hadamard product. This is a key step in the inference process.
 
 🔎 Equations `(12)–(15)` correspond to code in `models/VIDFCM.py`, lines `25–54`. The code on line `39` represents the Hadamard product of the weights $\boldsymbol{w}$ and the node matrix $\boldsymbol{A}$. 
 ### (3).Cross VI-FCM submodel
@@ -81,7 +81,7 @@ The inference process of the Cross VI-FCM submodel. The transfer function of Cro
 
 $A_i(S+1) = \frac{1}{1 + e^{-\lambda \left( \sum_{j=1}^{N}  \left(\gamma_{i,j}^{CF}  w_{i,j,:}\right) \circ A_j(S) + u_i(S) \right)}}$
 
-Similarly to the VI-FCM submodel, the weights $\boldsymbol{w}$, modulated by the dynamic coefficients $\gamma_{ij}$, are then element-wise multiplied with the node  $\boldsymbol{A}$ via the Hadamard product. The code on line 76 represents the Hadamard product of the weights $\boldsymbol{w}$ and the node matrix $\boldsymbol{A}$.
+Similarly to the VI-FCM submodel, the weights $\boldsymbol{w}$, modulated by the dynamic coefficients $\gamma_{ij}$, are then element-wise multiplied with the node  $\boldsymbol{A}$ via the Hadamard product. The code on line 76 represents the Hadamard product of the weights $\boldsymbol{w}$ and the node matrix $\boldsymbol{A}$. This is a key step in the correction process.
 
 🔎 Equation `(18)` correspond to code in `models/VIFCM_Cross.py`, lines `31`.
 
