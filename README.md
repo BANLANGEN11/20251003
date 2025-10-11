@@ -6,9 +6,15 @@
 **⚠️ Please note that two symbol errors were found in the paper and have now been corrected. The correct versions of the formulas are as follows:** 
 
 Equation (15) has been corrected to:
-
+<p align="center">
+<img src=".\pic\eq15.png" height = "360"   alt="" align=center />  
+<br><br>
+</p>
 Equation (22) has been corrected to:
-
+<p align="center">
+<img src=".\pic\eq22.png" height = "360"   alt="" align=center />  
+<br><br>
+</p>
 We apologize for any inconvenience this may have caused. Thank you for your understanding and support!
 
 
