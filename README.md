@@ -19,7 +19,7 @@ We apologize for any inconvenience this may have caused. Thank you for your unde
 
 
 ##  1.Program Overview
-(1) First, multidimensional Gaussian information granules are used to granulate the data in the training set, thereby obtaining the optimal segmentation method. For specific details, please refer to the literature “_Design Gaussian information granule based on the principle of justifiable granularity: A multi-dimensional perspective._”
+(1) First, multidimensional Gaussian information granules are used to granulate the data in the training set, thereby obtaining the optimal segmentation method. For specific details, please refer to the literature “_Design Gaussian information granule based on the principle of justifiable granularity: A multi-dimensional perspective._” (Since this part of the method is adapted from existing work, I have reproduced the approach accordingly. The code is not publicly available at present, but can be provided upon request.)
 
 (2) Next, run the “main_fcm” file in the util folder. Commands for training *VI-DFCM*  on the SIEC dataset:
   ```bash
