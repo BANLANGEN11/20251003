@@ -1,6 +1,8 @@
 # Deep Fuzzy Cognitive Maps with Vector Inference  for Multivariate Time Series Long-Term Forecasting
 ![Python 3.9](https://img.shields.io/badge/python-3.9-green.svg?style=plastic)
 ![PyTorch 1.2](https://img.shields.io/badge/PyTorch%20-%23EE4C2C.svg?style=plastic)
+![Patent Granted](https://img.shields.io/badge/Patent-Granted-brightgreen.svg?style=plastic)
+
 
 ##  0.Corrections to Formulas
 **⚠️ Please note that two symbol errors were found in the paper and have now been corrected. The correct versions of the formulas are as follows:** 
