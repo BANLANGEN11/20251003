@@ -5,7 +5,7 @@
 
 
 ##  0.Corrections to Formulas
-**⚠️ Please note that two symbol errors were found in the paper and have now been corrected. The correct versions of the formulas are as follows:** 
+**⚠️ Please note that two typos were found in the paper and have now been corrected. The correct versions of the formulas are as follows:** 
 
 Equation (15) has been corrected to:
 <p align="center">
