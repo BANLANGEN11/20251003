@@ -2,6 +2,15 @@
 ![Python 3.9](https://img.shields.io/badge/python-3.9-green.svg?style=plastic)
 ![PyTorch 1.2](https://img.shields.io/badge/PyTorch%20-%23EE4C2C.svg?style=plastic)
 
+##  0.Corrections to Formulas
+**⚠️ Please note that two symbol errors were found in the paper and have now been corrected. The correct versions of the formulas are as follows:** 
+
+Equation (15) has been corrected to:
+
+Equation (22) has been corrected to:
+
+We apologize for any inconvenience this may have caused. Thank you for your understanding and support!
+
 
 ##  1.Program Overview
 (1) First, multidimensional Gaussian information granules are used to granulate the data in the training set, thereby obtaining the optimal segmentation method. For specific details, please refer to the literature “_Design Gaussian information granule based on the principle of justifiable granularity: A multi-dimensional perspective._”
