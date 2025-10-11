@@ -67,7 +67,7 @@ $A_i(S+1) = \frac{1}{1 + e^{-\lambda \left( \sum_{j=1}^{N} \left(\gamma_{i,j}  w
 
 where $\circ$ denotes the Hadamard product, $\lambda$ represents the steepness parameter of the transfer function near zero, and $\boldsymbol{w}\in\mathbb{R}^{N\times N \times I}$ is the weight tensor.
 
-🔎
+🔎 Equations `(12)–(15)` correspond to code in `models/VIDFCM.py`, lines `25–54`.
 ### (3).Cross VI-FCM submodel
 <p align="center">
 <img src=".\pic\4Cross VI FCM.png" height = "360" width="50%" alt="" align=center />
@@ -79,6 +79,9 @@ The inference process of the Cross VI-FCM submodel. The transfer function of Cro
 
 $A_i(S+1) = \frac{1}{1 + e^{-\lambda \left( \sum_{j=1}^{N}  \left(\gamma_{i,j}^{CF}  w_{i,j,:}\right) \circ A_j(S) + u_i(S) \right)}}$
 
+🔎 Equation `(18)` correspond to code in `models/VIFCM_Cross.py`, lines `31`.
+
+🔎 Equations `(19)–(22)` correspond to code in `models/VIDFCM.py`, lines `68–90`.
 ### (4). EXPERIMENTAL RESULTS
 
 <p align="center">
