@@ -66,7 +66,7 @@ class FCM_2(nn.Module):
         self.projection_8 = nn.Linear(self.seq_len, self.seq_len, bias=True)
 
     def forward(self,q, p,  v_final,  batch_x_encoder):
-#q改为p,k改为q
+
         _, F, S, T = self.WW_2.shape
         A = self.batch_num
         p = p.float().to("cuda")
@@ -79,7 +79,7 @@ class FCM_2(nn.Module):
         scores_T = scores.transpose(1, 2)
         scores_1 = scores_T.view(A, F, S, 1).contiguous()
         scores_S = scores_1.expand(A, F, S, self.seq_len)
-        output = torch.mul(scores_S, v_final_tmp_8)  # 哈达玛乘积
+        output = torch.mul(scores_S, v_final_tmp_8)  
         output_final = torch.sum(output[:, :, :, :], dim=1)
         output_final = output_final + self.BIA2
         output_final = f(output_final)
